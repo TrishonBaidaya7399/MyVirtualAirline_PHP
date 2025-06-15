@@ -302,7 +302,6 @@ $MetaPageKeywords = "";
 @media (max-width: 992px) {
     .team-section {
         padding: 40px 0;
-        margin-top: 70px;
         background-attachment: scroll;
     }
     
@@ -332,7 +331,6 @@ $MetaPageKeywords = "";
 @media (max-width: 768px) {
     .team-section {
         padding: 30px 0;
-        margin-top: 60px;
         background-attachment: scroll;
     }
     
@@ -399,7 +397,6 @@ $MetaPageKeywords = "";
 @media (max-width: 576px) {
     .team-section {
         padding: 25px 0;
-        margin-top: 50px;
     }
     
     .offset-header {
@@ -459,7 +456,6 @@ $MetaPageKeywords = "";
 @media (max-width: 480px) {
     .team-section {
         padding: 20px 0;
-        margin-top: 40px;
     }
     
     .offset-header {

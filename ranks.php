@@ -256,7 +256,6 @@ $MetaPageKeywords = "";
 @media (max-width: 992px) {
     .ranks-section {
         padding: 40px 0;
-        margin-top: 70px;
         background-attachment: scroll;
     }
     
@@ -267,7 +266,6 @@ $MetaPageKeywords = "";
     .ranks-title {
         font-size: 2.2rem;
         text-align: left;
-        margin-bottom: 20px;
     }
     
     .ranks-icon {
@@ -287,7 +285,6 @@ $MetaPageKeywords = "";
 @media (max-width: 768px) {
     .ranks-section {
         padding: 30px 0;
-        margin-top: 60px;
         background-attachment: scroll;
     }
     
@@ -297,7 +294,6 @@ $MetaPageKeywords = "";
     
     .ranks-title {
         font-size: 2rem;
-        margin-bottom: 15px;
     }
     
     .ranks-icon {
@@ -343,7 +339,6 @@ $MetaPageKeywords = "";
 @media (max-width: 576px) {
     .ranks-section {
         padding: 25px 0;
-        margin-top: 50px;
     }
     
     .offset-header {
@@ -396,7 +391,6 @@ $MetaPageKeywords = "";
 @media (max-width: 480px) {
     .ranks-section {
         padding: 20px 0;
-        margin-top: 40px;
     }
     
     .offset-header {
