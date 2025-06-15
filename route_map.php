@@ -41,7 +41,8 @@ $MetaPageKeywords = "";
     position: relative;
     padding: 60px 0;
     min-height: calc(100vh - 128px);
-    background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80'); */
+       background-image: url('/images/map.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
