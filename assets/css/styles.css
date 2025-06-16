@@ -73,7 +73,6 @@ img.pilot-profile-image-small {width:30px; height:30px;}
 .registration-items {max-height:250px; overflow-y:scroll;}
 .event-panel {min-height:165px;}
 .navbar-default {background-color:white;border:none;top:-20px;}
-.activity-card-container {width:350px;height:350px;float:left;margin-right:30px;margin-bottom:30px;}
 .activity-card-hidden {display:none;opacity:0.8;background-color:#333;font-size: 25px;z-index:99;width:350px;height:350px;cursor:pointer;}
 .activity-card-hidden div {bottom: 0;opacity: 1;color:white;height:90px;background-color: black;width:350px;margin-bottom:15px;z-index:100;padding:15px;font-size:20px;}
 .activity-card-hidden a {color:white;text-decoration:none;opacity: 1;}
