@@ -41,8 +41,8 @@ $MetaPageKeywords = "";
     position: relative;
     padding: 60px 0;
     min-height: calc(100vh - 128px);
-    /* background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80'); */
-       background-image: url('/images/map.webp');
+    background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+       /* background-image: url('/images/map.webp'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ $MetaPageKeywords = "";
 
 /* Route Map Title - Outside Card */
 .route-map-title-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -118,6 +118,9 @@ $MetaPageKeywords = "";
     padding: 30px;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .route-map-header h1 {
@@ -168,7 +171,8 @@ $MetaPageKeywords = "";
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 10px;
+    max-width: 50%;
 }
 
 .icao {
@@ -316,13 +320,12 @@ $MetaPageKeywords = "";
 .flights-table {
     margin: 0;
     background: transparent;
-    color: #333;
+    color: #fff;
     width: 100%;
 }
 
 .flights-table thead th {
-    background: rgba(255, 255, 255, 0.9) !important;
-    color: #333 !important;
+    color: #fffF !important;
     font-weight: 600;
     border: none !important;
     padding: 15px 12px;
@@ -332,6 +335,7 @@ $MetaPageKeywords = "";
     position: sticky;
     top: 0;
     z-index: 10;
+    text-wrap: nowrap;
 }
 
 .flights-table tbody tr {
@@ -362,12 +366,9 @@ $MetaPageKeywords = "";
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
-    color: #333;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 15px;
+    color: #fff;
+    padding: 10px;
     margin: 0;
-    border-radius: 50px;
-    width: fit-content;
 }
 
 .dataTables_wrapper .dataTables_length {
@@ -385,9 +386,11 @@ $MetaPageKeywords = "";
 .dataTables_wrapper .dataTables_paginate {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.form-control{
+    height: 40px !important;
+}
 .dataTables_wrapper .dataTables_filter input {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 6px;
     padding: 6px 10px;
@@ -395,8 +398,6 @@ $MetaPageKeywords = "";
 }
 
 .paginate_button {
-    background: rgba(255, 215, 0, 0.8) !important;
-    border: 1px solid rgba(255, 215, 0, 0.5) !important;
     color: #333 !important;
     border-radius: 4px !important;
     margin: 0 2px !important;
@@ -421,7 +422,23 @@ $MetaPageKeywords = "";
     background: rgba(255, 255, 255, 0.8);
     font-size: 1.2rem;
 }
-
+#flights_wrapper .row .col-sm-6{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+} 
+#flights_wrapper .row .col-sm-5{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+} 
+#flights_wrapper .row .col-sm-7{
+    background: transparent !important;
+    padding: 0 !important;
+} 
+#flights_wrapper .row .col-sm-12{
+    overflow-x: auto;
+} 
 /* Responsive Design */
 @media (max-width: 1200px) {
     .route-map-section {
@@ -515,6 +532,7 @@ $MetaPageKeywords = "";
     .route-map-controls {
         flex-direction: row;
         gap: 10px;
+        max-width: 70%;
     }
     
     .route-map-glass-card,
@@ -574,6 +592,9 @@ $MetaPageKeywords = "";
     .route-map-icon {
         font-size: 1.5rem;
     }
+      .route-map-controls {
+        max-width: 100%;
+      }
     
     .route-map-title-wrapper {
         gap: 10px;
@@ -680,8 +701,7 @@ $MetaPageKeywords = "";
     
     .flights-table thead th,
     .flights-table tbody td {
-        background: white;
-        color: black;
+        color: white;
     }
 }
 </style>
