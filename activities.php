@@ -78,10 +78,15 @@ if ($res->getStatusCode() == 200) {
         background-position: center;
         background-repeat: no-repeat;
         min-height: 200px;
+        width: 100% !important;
+        min-width: 100% !important;
         position: relative;
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
+        margin: 0 !important;
+        border-radius: 10px;
+
     }
 
     .activity-card-container:hover {
@@ -94,20 +99,25 @@ if ($res->getStatusCode() == 200) {
         top: 0;
         left: 0;
         width: 100%;
+        min-width: 100% !important; 
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
         display: none;
         align-items: center;
         justify-content: center;
         border-radius: 10px !important;
-        padding: 20px;
+        /* padding: 20px; */
         box-sizing: border-box;
     }
 
     .activity-card-hidden div {
         text-align: center;
         width: 100%;
+        min-width: 100% !important;
         border-radius: 10px 10px 0 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .activity-card-hidden p {
@@ -118,7 +128,7 @@ if ($res->getStatusCode() == 200) {
     .activity-card-hidden a {
         color: #ffffff;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: 600;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
         transition: color 0.3s ease;
@@ -131,34 +141,48 @@ if ($res->getStatusCode() == 200) {
 
     /* Cards Grid Layout */
     .cards-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
         gap: 20px;
         margin: 0 auto;
         max-width: 100%;
     }
-
+    
     .card-item {
-        flex: 0 0 auto;
-        width: 300px;
-        max-width: calc(100% - 40px);
+        /* flex: 0 0 auto; */
+        /* width: 300px; */
+        /* max-width: calc(100% - 40px); */
     }
 
+    .activity-card-container:hover .activity-card-hidden {
+    display: flex;
+    align-items: start;
+}
+
+.no-event{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem !important;
+}
+    
     /* Responsive Grid Layout */
     @media (max-width: 612px) {
         .cards-grid {
+            grid-template-columns: repeat(1, 1fr);
             justify-content: center;
         }
         
         .card-item {
             width: 100%;
-            max-width: 400px;
+          
         }
     }
-
+    
     @media (min-width: 613px) and (max-width: 800px) {
         .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
         }
         
@@ -167,15 +191,15 @@ if ($res->getStatusCode() == 200) {
             max-width: 280px;
         }
     }
-
+    
     @media (min-width: 801px) {
         .cards-grid {
+            grid-template-columns: repeat(3, 1fr);
             justify-content: center;
         }
         
         .card-item {
-            width: 300px;
-            max-width: calc(33.333% - 14px);
+            width: 100%;
         }
     }
 
@@ -244,7 +268,7 @@ if ($res->getStatusCode() == 200) {
         
         .activity-card-container {
             min-height: 160px;
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
         }
         
         .activity-card-hidden a {
@@ -258,9 +282,25 @@ if ($res->getStatusCode() == 200) {
         .section-divider {
             margin: 40px 0;
         }
+        .cards-grid{
+            margin-inline: 20px !important;
+            max-width: calc(100% - 70px)
+        }
+        .card-item{
+            width: 100% !important;
+            max-width: 100% !important;
+        }
     }
-
+    
     @media (max-width: 576px) {
+        .cards-grid{
+            margin-inline: auto !important;
+            max-width: calc(100% - 70px)
+        }
+        .card-item{
+            width: 100% !important;
+            max-width: 100% !important;
+        }
         .activity-title-wrapper {
             gap: 10px;
             flex-direction: row;
@@ -281,7 +321,7 @@ if ($res->getStatusCode() == 200) {
         
         .activity-card-container {
             min-height: 140px;
-            margin-bottom: 12px;
+            /* margin-bottom: 12px; */
         }
         
         .activity-card-hidden {
@@ -396,35 +436,35 @@ if ($res->getStatusCode() == 200) {
                     <hr />
                 </div>
                 
-                <div class="cards-grid">
-                    <?php if (!empty($activities)) { ?>
-                        <?php
+                <?php if (!empty($activities)) { ?>
+                    <?php
                         $noEvents = true;
                         foreach ($activities as $key => $activity) {
                             if ($activity->type == "Event") {
                                 $noEvents = false; ?>
+                                <div class="cards-grid">
                                 <div class="card-item">
                                     <div class="activity-card-container rounded" data-activityid="<?php echo $activity->id; ?>"
                                         style="background-image:url(<?php echo website_base_url; ?>uploads/activities/<?php echo $activity->banner; ?>);background-color:#ccc;">
                                         <div class="activity-card-hidden rounded">
-                                            <div>
-                                                <p><a href="<?php echo website_base_url; ?>activity.php?id=<?php echo $activity->id; ?>"
+                                            <div class=" d-flex align-items-center justify-content-center">
+                                                <p class="text-xl"><a href="<?php echo website_base_url; ?>activity.php?id=<?php echo $activity->id; ?>"
                                                         class="js_showloader"><?php echo $activity->title; ?></a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                         <?php
                             }
                         }
                         if ($noEvents) { ?>
-                            <p class="text-align-center text-white">There are currently no events.</p>
+                            <p class="no-event text-align-center text-white">There are currently no events.</p>
                         <?php } ?>
                     <?php } else { ?>
-                        <p class="text-align-center text-white">There are currently no events.</p>
+                        <p class="no-event text-align-center text-white">There are currently no events.</p>
                     <?php } ?>
-                </div>
             </div>
         </div>
 
