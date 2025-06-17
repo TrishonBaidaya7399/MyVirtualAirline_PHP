@@ -54,7 +54,7 @@ $MetaPageKeywords = "";
 
 /* Awards Description Glass Card */
 .awards-description-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -118,7 +118,7 @@ $MetaPageKeywords = "";
 
 /* Glassmorphism Card */
 .awards-glass-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -381,7 +381,7 @@ $MetaPageKeywords = "";
     padding: 60px 20px;
     color: #ffffff;
     font-style: italic;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(15px);
     border-radius: 15px;
     font-size: 1.2rem;
