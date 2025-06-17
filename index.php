@@ -13,14 +13,14 @@ session_start();
 
 .hero-section {
     position: relative;
-    
+    min-height: 90vh;
     overflow: hidden;
 }
 
 .hero-banner {
     position: relative;
-    min-height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+    min-height: 90vh;
+    background-image: url('./assets/images/backgrounds/slc-line_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ session_start();
 
 .stats-parallax-section {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+    background-image: url('./assets/images/backgrounds/air_stats_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,6 +257,12 @@ session_start();
 }
 
 @media (max-width: 768px) {
+    .hero-section{
+        min-height: 70vh;
+    }
+    .hero-banner{
+        min-height: 70vh;
+    }
     .features.section {
         background-attachment: scroll;
         padding: 40px 0;
@@ -319,7 +325,6 @@ session_start();
     .hero-banner {
         background-attachment: scroll; 
         padding: 60px 0;
-        min-height: 400px;
     }
 }
 

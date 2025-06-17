@@ -22,10 +22,10 @@ $MetaPageKeywords = "";
 <?php include 'includes/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="assets/plugins/datatables/datatables.min.css" />
 <style>
-/* Advanced Schedule Section Styles with Parallax Background */
+
 .schedule-section {
     position: relative;
-    padding: 60px 0;
+    padding: 80px 0;
     min-height: calc(100vh - 128px);
     background-image: url('./assets/images/backgrounds/leaderboard_sky_bg.jpg');
     background-size: cover;
@@ -54,7 +54,7 @@ $MetaPageKeywords = "";
     padding-top: 100px;
 }
 
-/* Glassmorphism Cards */
+
 .schedule-glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -72,7 +72,7 @@ $MetaPageKeywords = "";
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Header Content Styling */
+
 .schedule-header {
     padding: 30px;
     text-align: center;
@@ -83,9 +83,9 @@ $MetaPageKeywords = "";
 }
 
 .schedule-header h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -123,7 +123,7 @@ $MetaPageKeywords = "";
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Form Controls */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -160,7 +160,7 @@ $MetaPageKeywords = "";
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Flights Table Glass Card */
+
 .flights-table-glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -177,7 +177,7 @@ $MetaPageKeywords = "";
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Table Header */
+
 .flights-table-header {
     background: rgba(255, 255, 255, 0.9);
     color: #333;
@@ -200,14 +200,14 @@ $MetaPageKeywords = "";
     font-size: 1.5rem;
 }
 
-/* Table Wrapper */
+
 .flights-table-wrapper {
     overflow-x: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-/* Custom scrollbar for webkit browsers */
+
 .flights-table-wrapper::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -227,7 +227,7 @@ $MetaPageKeywords = "";
     background: rgba(255, 193, 7, 0.7);
 }
 
-/* DataTable Overrides */
+
 .flights-table {
     margin: 0;
     background: transparent;
@@ -272,7 +272,7 @@ $MetaPageKeywords = "";
     border-bottom: none !important;
 }
 
-/* DataTable specific overrides */
+
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
@@ -322,7 +322,7 @@ $MetaPageKeywords = "";
     color: #222 !important;
 }
 
-/* No Data Message */
+
 .no-data-message {
     text-align: center;
     padding: 60px 20px;
@@ -332,7 +332,7 @@ $MetaPageKeywords = "";
     font-size: 1.2rem;
 }
 
-/* DataTable wrapper overrides */
+
 #flights_wrapper .row .col-sm-6 {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -354,10 +354,10 @@ $MetaPageKeywords = "";
     overflow-x: auto;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .schedule-section {
-        padding: 50px 0;
+        padding: 80px 0;
     }
     
     .schedule-header h1 {
@@ -373,7 +373,7 @@ $MetaPageKeywords = "";
 
 @media (max-width: 992px) {
     .schedule-section {
-        padding: 40px 0;
+        padding: 80px 0;
         background-attachment: scroll;
     }
     
@@ -395,12 +395,12 @@ $MetaPageKeywords = "";
 
 @media (max-width: 768px) {
     .schedule-section {
-        padding: 30px 0;
+        padding: 80px 0;
         background-attachment: scroll;
     }
     
     .offset-header {
-        padding-top: 60px;
+        padding-top: 80px;
     }
     
     .schedule-header {
@@ -458,7 +458,7 @@ $MetaPageKeywords = "";
 
 @media (max-width: 576px) {
     .schedule-section {
-        padding: 25px 0;
+        padding: 80px 0;
     }
     
     .offset-header {
@@ -499,7 +499,7 @@ $MetaPageKeywords = "";
 
 @media (max-width: 480px) {
     .schedule-section {
-        padding: 20px 0;
+        padding: 80px 0;
     }
     
     .offset-header {
@@ -517,11 +517,11 @@ $MetaPageKeywords = "";
     }
 }
 
-/* Print Styles */
+
 @media print {
     .schedule-section {
         background: white;
-        padding: 20px 0;
+        padding: 80px 0;
     }
     
     .schedule-section::before {

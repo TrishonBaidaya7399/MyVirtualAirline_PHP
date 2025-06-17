@@ -36,12 +36,12 @@ $MetaPageKeywords = "";
 <script src="<?php echo website_base_url; ?>assets/plugins/leaflet/arc.js" type="text/javascript"></script>
 <script src="<?php echo website_base_url; ?>assets/plugins/leaflet/map.helpers.js" type="text/javascript"></script>
 <style>
-/* Route Map Section Styles with Parallax Background */
+
 .route-map-section {
     position: relative;
     padding: 60px 0;
     min-height: calc(100vh - 128px);
-    /* background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80'); */
+    
        background-image: url('./assets/images/backgrounds/world_map2.jpg');
     background-size: cover;
     background-position: center;
@@ -69,7 +69,7 @@ $MetaPageKeywords = "";
     padding-top: 100px;
 }
 
-/* Route Map Title - Outside Card */
+
 .route-map-title-wrapper {
     margin-bottom: 10px;
     display: flex;
@@ -95,7 +95,7 @@ $MetaPageKeywords = "";
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Glassmorphism Cards */
+
 .route-map-glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -113,7 +113,7 @@ $MetaPageKeywords = "";
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Header Content Styling */
+
 .route-map-header {
     padding: 30px;
     text-align: center;
@@ -164,7 +164,7 @@ $MetaPageKeywords = "";
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Search Controls */
+
 .route-map-controls {
     display: flex;
     flex-direction: row;
@@ -224,7 +224,7 @@ $MetaPageKeywords = "";
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Map Container */
+
 .map-container-glass {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -248,7 +248,7 @@ $MetaPageKeywords = "";
     overflow: hidden;
 }
 
-/* Flights Table Glass Card */
+
 .flights-table-glass-card {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
@@ -265,7 +265,7 @@ $MetaPageKeywords = "";
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Table Header */
+
 .flights-table-header {
     background: rgba(255, 255, 255, 0.9);
     color: #333;
@@ -288,7 +288,7 @@ $MetaPageKeywords = "";
     font-size: 1.5rem;
 }
 
-/* Table Wrapper */
+
 .flights-table-wrapper {
     overflow-x: auto;
     max-height: 600px;
@@ -296,7 +296,7 @@ $MetaPageKeywords = "";
     -webkit-overflow-scrolling: touch;
 }
 
-/* Custom scrollbar for webkit browsers */
+
 .flights-table-wrapper::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -316,7 +316,7 @@ $MetaPageKeywords = "";
     background: rgba(255, 193, 7, 0.7);
 }
 
-/* DataTable Overrides */
+
 .flights-table {
     margin: 0;
     background: transparent;
@@ -361,7 +361,7 @@ $MetaPageKeywords = "";
     border-bottom: none !important;
 }
 
-/* DataTable specific overrides */
+
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
@@ -413,7 +413,7 @@ $MetaPageKeywords = "";
     color: #222 !important;
 }
 
-/* No Data Message */
+
 .no-data-message {
     text-align: center;
     padding: 60px 20px;
@@ -439,7 +439,7 @@ $MetaPageKeywords = "";
 #flights_wrapper .row .col-sm-12{
     overflow-x: auto;
 } 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .route-map-section {
         padding: 50px 0;
@@ -673,7 +673,7 @@ $MetaPageKeywords = "";
     }
 }
 
-/* Print Styles */
+
 @media print {
     .route-map-section {
         background: white;

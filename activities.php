@@ -24,7 +24,7 @@ if ($res->getStatusCode() == 200) {
         padding: 60px 0;
         min-height: calc(100vh - 128px);
         background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
-        /* background-image: url('/images/map.webp'); */
+        
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -106,7 +106,7 @@ if ($res->getStatusCode() == 200) {
         align-items: center;
         justify-content: center;
         border-radius: 10px !important;
-        /* padding: 20px; */
+        
         box-sizing: border-box;
     }
 
@@ -139,7 +139,7 @@ if ($res->getStatusCode() == 200) {
         text-decoration: none;
     }
 
-    /* Cards Grid Layout */
+    
     .cards-grid {
         display: grid;
         gap: 20px;
@@ -148,9 +148,9 @@ if ($res->getStatusCode() == 200) {
     }
     
     .card-item {
-        /* flex: 0 0 auto; */
-        /* width: 300px; */
-        /* max-width: calc(100% - 40px); */
+        
+        
+        
     }
 
     .activity-card-container:hover .activity-card-hidden {
@@ -167,7 +167,7 @@ if ($res->getStatusCode() == 200) {
     font-size: 3rem !important;
 }
     
-    /* Responsive Grid Layout */
+    
     @media (max-width: 612px) {
         .cards-grid {
             grid-template-columns: repeat(1, 1fr);
@@ -214,7 +214,7 @@ if ($res->getStatusCode() == 200) {
         margin: 60px 0;
     }
 
-    /* Responsive Design */
+    
     @media (max-width: 1200px) {
         .activity-title {
             font-size: 2.5rem;
@@ -268,7 +268,7 @@ if ($res->getStatusCode() == 200) {
         
         .activity-card-container {
             min-height: 160px;
-            /* margin-bottom: 15px; */
+            
         }
         
         .activity-card-hidden a {
@@ -321,7 +321,7 @@ if ($res->getStatusCode() == 200) {
         
         .activity-card-container {
             min-height: 140px;
-            /* margin-bottom: 12px; */
+            
         }
         
         .activity-card-hidden {
@@ -383,7 +383,7 @@ if ($res->getStatusCode() == 200) {
         }
     }
 
-    /* Hover effects for touch devices */
+    
     @media (hover: none) and (pointer: coarse) {
         .activity-card-container:hover {
             transform: none;
@@ -395,21 +395,21 @@ if ($res->getStatusCode() == 200) {
         }
     }
 
-    /* High DPI displays */
+    
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .activity-section {
             background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=4148&q=80');
         }
     }
 
-    /* Dark mode support */
+    
     @media (prefers-color-scheme: dark) {
         .activity-card-hidden {
             background: rgba(0, 0, 0, 0.8);
         }
     }
 
-    /* Reduced motion for accessibility */
+    
     @media (prefers-reduced-motion: reduce) {
         .activity-card-container {
             transition: none;
