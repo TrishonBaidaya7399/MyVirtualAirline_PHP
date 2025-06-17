@@ -8,8 +8,28 @@ include 'lib/functions.php';
 include 'config.php';
 session_start();
 ?>
-<?php include 'includes/header.php';?>
 <style>
+    .about-section {
+        position: relative;
+        padding: 80px 0;
+        min-height: calc(100vh - 128px);
+        background-image: url('./assets/images/backgrounds/homepg_lower_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .glass-card{
+          background: rgba(255, 255, 255, 0.50) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 0px !important;
+    }
     @media screen and (max-width: 840px){
         .img-circle{
             max-height: 300px;   
@@ -25,12 +45,14 @@ session_start();
             max-height: 240px;   
         }
     }
+    
 </style>
-<section id="content" class="cp section" style="background: #eee">
+    <?php include 'includes/header.php';?>
+<section id="content" class="section about-section">
     <div class="container">
         <div class="row">
-            <div class="jumbotron" style="margin-top: 30px">
-                <h1 class="text-center">About Us</h1>
+            <div class="jumbotron glass-card">
+                <h1 class="text-center" style="margin-top: 0px">About Us</h1>
                 <img src="<?php echo website_base_url; ?>images/about-img.png" style="float:right; padding:15px;"
                     class="img-circle" />
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
