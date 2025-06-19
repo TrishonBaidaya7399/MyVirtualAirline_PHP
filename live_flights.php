@@ -90,7 +90,7 @@ $MetaPageKeywords = "";
     margin: 0;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .live-flights-icon {
@@ -122,7 +122,7 @@ $MetaPageKeywords = "";
 .live-flights-header {
     padding: 30px;
     text-align: center;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +132,7 @@ $MetaPageKeywords = "";
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -149,7 +149,7 @@ $MetaPageKeywords = "";
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -254,12 +254,12 @@ $MetaPageKeywords = "";
 .flights-table {
     margin: 0;
     background: transparent;
-    color: #fff;
+    color: rgba(0,0,0,0.7);
     width: 100%;
 }
 
 .flights-table thead th {
-    color: #fff !important;
+    color: rgba(0,0,0,0.9);
     font-weight: 600;
     border: none !important;
     padding: 15px 12px;
@@ -288,7 +288,7 @@ $MetaPageKeywords = "";
     border: none !important;
     vertical-align: middle;
     font-size: 14px;
-    color: #333;
+    color: rgba(0,0,0,0.7);
 }
 
 .flights-table tbody tr:last-child {
@@ -313,7 +313,7 @@ $MetaPageKeywords = "";
 .no-data-message {
     text-align: center;
     padding: 60px 20px;
-    color: #333;
+    color: rgba(0,0,0,0.7);
     font-style: italic;
     background: rgba(255, 255, 255, 0.8);
     font-size: 1.2rem;
