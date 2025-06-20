@@ -19,8 +19,22 @@ session_start();
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    .about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.about-section .container {
+    position: relative;
+    z-index: 2;
+}
     .glass-card{
-          background: rgba(255, 255, 255, 0.50) !important;
+          background: rgba(255, 255, 255, 0.20) !important;
     backdrop-filter: blur(15px) !important;
     -webkit-backdrop-filter: blur(15px) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;

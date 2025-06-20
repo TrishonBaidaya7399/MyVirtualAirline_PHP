@@ -63,7 +63,7 @@ $MetaPageKeywords = "";
     color: #ffffff;
     margin: 0;
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -77,7 +77,7 @@ $MetaPageKeywords = "";
 
 /* Glassmorphism Card */
 .statistics-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);

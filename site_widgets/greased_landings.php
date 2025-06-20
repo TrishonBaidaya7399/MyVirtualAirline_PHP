@@ -37,7 +37,7 @@ if ($res->getStatusCode() == 200) {
     color: #fff;
     margin: 0;
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -53,7 +53,7 @@ if ($res->getStatusCode() == 200) {
 
 
 .top-landings-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);

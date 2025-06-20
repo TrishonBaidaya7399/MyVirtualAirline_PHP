@@ -54,7 +54,7 @@ $MetaPageKeywords = "";
 
 /* Awards Description Glass Card */
 .awards-description-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -71,8 +71,8 @@ $MetaPageKeywords = "";
 }
 
 .awards-main-title {
-    font-size: 3.5rem;
-    font-weight: 300;
+    font-size: 4srem;
+    font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
     margin-top: 0px;
@@ -83,11 +83,11 @@ $MetaPageKeywords = "";
 }
 
 .awards-description {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8;
     color: #ffffff;
     text-align: justify;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
@@ -118,7 +118,7 @@ $MetaPageKeywords = "";
 
 /* Glassmorphism Card */
 .awards-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -169,7 +169,7 @@ $MetaPageKeywords = "";
 .awards-table {
     margin: 0;
     background: transparent;
-    color: #333;
+      color: rgba(0,0,0,9);
     min-width: 700px;
     width: 100%;
 }
@@ -178,7 +178,7 @@ $MetaPageKeywords = "";
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: #ffffff;
+    color: rgba(0,0,0,1);
     font-weight: 600;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 12px;
@@ -211,8 +211,7 @@ $MetaPageKeywords = "";
     border: 1px solid rgba(255, 255, 255, 0.1);
     vertical-align: middle;
     font-size: 14px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+     color: rgba(0,0,0,9);
 }
 
 .awards-table tbody tr:last-child td {
@@ -284,18 +283,16 @@ $MetaPageKeywords = "";
 /* Award Name Styling */
 .awards-table tbody td:nth-child(2) {
     font-weight: 600;
-    color: #ffffff;
+   color: rgba(0,0,0,9);
     font-size: 16px;
     width: 200px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Award Description Styling */
 .awards-table tbody td:nth-child(3) {
-    color: #ffffff;
+    color: rgba(0,0,0,9);
     line-height: 1.6;
     font-size: 14px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Fullscreen Modal */
@@ -381,7 +378,7 @@ $MetaPageKeywords = "";
     padding: 60px 20px;
     color: #ffffff;
     font-style: italic;
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     border-radius: 15px;
     font-size: 1.2rem;

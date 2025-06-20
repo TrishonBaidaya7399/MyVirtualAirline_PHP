@@ -27,8 +27,6 @@ $MetaPageKeywords = "";
 .team-section {
     position: relative;
     padding: 60px 0;
-    
-    
     background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
     background-size: cover;
     background-position: center;
@@ -58,7 +56,7 @@ $MetaPageKeywords = "";
 
 
 .team-description-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -76,21 +74,23 @@ $MetaPageKeywords = "";
 }
 
 .team-title {
-    font-size: 3.5rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Montserrat', sans-serif;
+    margin-top: 0px !important;
 }
 
+
 .team-description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     color: #ffffff;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
@@ -129,7 +129,7 @@ $MetaPageKeywords = "";
 
 
 .team-member-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -159,6 +159,8 @@ $MetaPageKeywords = "";
 .member-profile-image {
     width: 120px;
     height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid rgba(255, 255, 255, 0.5);
@@ -172,13 +174,22 @@ $MetaPageKeywords = "";
 }
 
 .image-circle {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     font-size: 120px;
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
+    border-radius: 50%;
     line-height: 1;
+    background: rgba(255, 255, 255, 0.7);
 }
 
+.image-circle::before {
+    height: 120px;
 
+}
 .member-name {
     font-size: 1.4rem;
     font-weight: 600;
@@ -268,7 +279,7 @@ $MetaPageKeywords = "";
 
 
 .no-staff-message {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
@@ -557,7 +568,9 @@ $MetaPageKeywords = "";
                                          class="member-profile-image" 
                                          alt="<?php echo $staff->staffName ?>" />
                                     <?php } else { ?>
-                                    <i class="fa fa-user-circle image-circle" aria-hidden="true"></i>
+                                    <img src="./images/avatar.webp"
+                                         class="member-profile-image" 
+                                         alt="avatar" />
                                     <?php } ?>
                                 </div>
                                 

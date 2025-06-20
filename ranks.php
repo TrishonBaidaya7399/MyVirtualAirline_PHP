@@ -81,7 +81,7 @@ $MetaPageKeywords = "";
 
 /* Glassmorphism Card */
 .ranks-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -208,7 +208,7 @@ $MetaPageKeywords = "";
     padding: 60px 20px;
     color: #ffffff;
     font-style: italic;
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     border-radius: 15px;
     font-size: 1.2rem;

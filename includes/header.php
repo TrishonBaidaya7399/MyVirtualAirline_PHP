@@ -209,14 +209,13 @@ if (isset($_SESSION['pilotid'])) {
 .mobile-drawer-menu .nav-item > a {
   display: block;
   padding: 15px 20px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
 
 .mobile-drawer-menu .nav-item > a:hover {
   background: #f8f9fa;
-  color: #007bff;
 }
 
 .mobile-drawer-submenu {
@@ -351,7 +350,7 @@ if (isset($_SESSION['pilotid'])) {
                                                         <?php } ?>
                                                 <?php } ?>
 
-                                                <li class="nav-item">
+                                                <li class="nav-item" style="min-width: 110px">
                                                         <a id="ct" class="nav-link"></a>
                                                 </li>
                                         </ul>
@@ -459,7 +458,7 @@ if (isset($_SESSION['pilotid'])) {
                                         <?php } ?>
                                 <?php } ?>
 
-                                <li class="nav-item">
+                                <li class="nav-item" style="min-width: 110px">
                                         <a id="ct-mobile"></a>
                                 </li>
                         </ul>

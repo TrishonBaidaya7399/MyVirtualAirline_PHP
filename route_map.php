@@ -56,7 +56,7 @@ $MetaPageKeywords = "";
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -79,8 +79,8 @@ $MetaPageKeywords = "";
 }
 
 .route-map-title {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
     letter-spacing: 2px;
@@ -97,7 +97,7 @@ $MetaPageKeywords = "";
 
 
 .route-map-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -141,10 +141,10 @@ $MetaPageKeywords = "";
 }
 
 .route-map-header p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -226,7 +226,7 @@ $MetaPageKeywords = "";
 
 
 .map-container-glass {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -250,7 +250,7 @@ $MetaPageKeywords = "";
 
 
 .flights-table-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -268,7 +268,7 @@ $MetaPageKeywords = "";
 
 .flights-table-header {
     background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: rgba(0,0,0,1);
     padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -277,7 +277,7 @@ $MetaPageKeywords = "";
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #2c3e50;
+  color: rgba(0,0,0,0.9);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -320,12 +320,12 @@ $MetaPageKeywords = "";
 .flights-table {
     margin: 0;
     background: transparent;
-    color: #fff;
+   color: rgba(0,0,0,0.9);
     width: 100%;
 }
 
 .flights-table thead th {
-    color: #fffF !important;
+color: rgba(0,0,0,1);
     font-weight: 600;
     border: none !important;
     padding: 15px 12px;
@@ -354,7 +354,7 @@ $MetaPageKeywords = "";
     border: none !important;
     vertical-align: middle;
     font-size: 14px;
-    color: #333;
+   color: rgba(0,0,0,0.9);
 }
 
 .flights-table tbody tr:last-child {
@@ -366,7 +366,7 @@ $MetaPageKeywords = "";
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
-    color: #fff;
+    color: rgba(0,0,0,0.9);
     padding: 10px;
     margin: 0;
 }
@@ -394,7 +394,7 @@ $MetaPageKeywords = "";
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 6px;
     padding: 6px 10px;
-    color: #333;
+color: rgba(0,0,0,0.9);
 }
 
 .paginate_button {
@@ -430,7 +430,7 @@ $MetaPageKeywords = "";
     padding-left: 0 !important;
     padding-right: 0 !important;
     background: transparent !important;
-    color: #fff !important;
+   color: rgba(0,0,0,0.9);
 } 
 #flights_wrapper .row .col-sm-7{
     background: transparent !important;

@@ -102,7 +102,7 @@ $MetaPageKeywords = "";
 
 /* Glassmorphism Cards */
 .live-flights-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -146,7 +146,7 @@ $MetaPageKeywords = "";
 }
 
 .live-flights-header p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 15px;
     color: rgba(0, 0, 0, 0.9);
@@ -160,7 +160,7 @@ $MetaPageKeywords = "";
 
 /* Map Container */
 .map-container-glass {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -184,7 +184,7 @@ $MetaPageKeywords = "";
 
 /* Flights Table Glass Card */
 .flights-table-glass-card {
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
