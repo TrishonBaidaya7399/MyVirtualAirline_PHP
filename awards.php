@@ -310,7 +310,7 @@ $MetaPageKeywords = "";
 }
 
 .fullscreen-modal.show {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     animation: fadeIn 0.3s ease;
@@ -323,53 +323,55 @@ $MetaPageKeywords = "";
 
 .fullscreen-content {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .fullscreen-image {
-    max-width: 100%;
-    max-height: 80vh;
+    width: 90%;
+    height: 90%;
     object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
 }
 
 .fullscreen-caption {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
 .close-fullscreen {
     position: absolute;
-    top: -50px;
-    right: 0;
-    color: #ffffff;
-    font-size: 36px;
+    top: 10px;
+    right: 10px;
+    color: #ff6b6b;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.1);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
-
 .close-fullscreen:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
-    color: #ff6b6b;
 }
 
 /* No Data Message */
@@ -803,7 +805,7 @@ $MetaPageKeywords = "";
                                             <img src="<?php echo website_base_url; ?>uploads/awards/<?php echo $award->imageUrl; ?>"
                                                  alt="<?php echo htmlspecialchars($award->name, ENT_QUOTES); ?>" />
                                             <div class="fullscreen-overlay">
-                                                <i class="fa fa-expand fullscreen-icon" aria-hidden="true"></i>
+                                                <i class="fa fa-expand fullscreen-icon" style="height: 30px; width: 30px; size: 30px; color: #fff" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                     </td>
