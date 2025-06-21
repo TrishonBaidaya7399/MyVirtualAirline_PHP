@@ -1,6 +1,5 @@
 body {
-  font-family: "Lato", arial, sans-serif;
-  color: black;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,12 +16,7 @@ h6 {
   font-weight: 500;
   color: black;
 }
-.inter-uniquifier {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
+
 .table i {
   color: #0fa2d2;
 }

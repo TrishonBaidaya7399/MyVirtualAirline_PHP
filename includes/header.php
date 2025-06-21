@@ -53,6 +53,11 @@ if (isset($_SESSION['pilotid'])) {
   height: auto;
   width: auto;
 }
+#logo-image-drawer {
+  max-height: 18px;
+  height: auto;
+  width: auto;
+}
 .nav-item a{
   font-weight: 800;
   text-transform: uppercase;
@@ -155,7 +160,13 @@ if (isset($_SESSION['pilotid'])) {
   left: -300px;
   width: 300px;
   height: 100vh;
-  background: #fff;
+   background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0 0 15px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   z-index: 9999;
   transition: left 0.3s ease;
   overflow-y: auto;
@@ -182,7 +193,7 @@ if (isset($_SESSION['pilotid'])) {
 }
 
 .mobile-drawer-header {
-  padding: 20px;
+  padding: 10px 10px 10px 20px;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -364,7 +375,7 @@ if (isset($_SESSION['pilotid'])) {
                                                 </a>
                                         </div>
                                         <button class="mobile-hamburger" id="mobileMenuToggle">
-                                                <i class="fa fa-bars"></i>
+                                                <i class="fa fa-bars" style="color: rgba(255, 215, 0, 1)"></i>
                                         </button>
                                 </div>
                         </nav>
@@ -373,9 +384,13 @@ if (isset($_SESSION['pilotid'])) {
                 <!-- Mobile Drawer -->
                 <div class="mobile-drawer" id="mobileDrawer">
                         <div class="mobile-drawer-header">
-                                <h5>Menu</h5>
+                                  <div class="logo" style="padding-top: 0px">
+                                                <a href="<?php echo website_base_url; ?>">
+                                                        <img src="https://www.dalvirtual.com/flightcenter/images/fltctr_logo_400x32.png" alt="MyVirtualAirline Logo" id="logo-image-drawer">
+                                                </a>
+                                        </div>
                                 <button class="mobile-drawer-close" id="mobileDrawerClose">
-                                        <i class="fa fa-times"></i>
+                                        <i class="fa fa-times" style="color: rgba(248, 6, 6, 0.9)"></i>
                                 </button>
                         </div>
 
