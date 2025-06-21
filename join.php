@@ -162,7 +162,25 @@ $MetaPageKeywords = "virtual airline, pilot application, join, aviation, flight 
 .offset-header {
     padding-top: 100px;
 }
-
+/* -------------------------------- Global title ------------------------------------ */
+.global-heading{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.global-heading .global-title{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 0px !important;
+    text-transform: lowercase;
+}
+@media (max-width: 612px){
+    .global-heading .global-title{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+/* -------------------------------- X ------------------------------------ */
 /* Glassmorphism Card */
 .glass-card {
     background: rgba(255, 255, 255, 0.20);
@@ -471,10 +489,10 @@ $MetaPageKeywords = "virtual airline, pilot application, join, aviation, flight 
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-4">
+                <div class="global-heading">
+                    <h3 class="global-title">Pilot Application Form</h3>
+                </div>
                 <div class="glass-card">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Pilot Application Form</h3>
-                    </div>
                     <div class="panel-body">
                         <?php if ($status == 'success') { ?>
                         <div class="alert alert-success" role="alert">
@@ -602,12 +620,12 @@ $MetaPageKeywords = "virtual airline, pilot application, join, aviation, flight 
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
+                <div class="global-heading">
+                    <h3 class="global-title">Terms & Conditions</h3>
+                </div>
                 <div class="glass-card terms-card">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Terms & Conditions</h3>
-                    </div>
                     <div class="panel-body">
-                        <p style="color: #fff; border-bottom: 1px solid rgba(255, 215, 0, 1); padding-bottom: 4px; width: fit-content; padding-inline: 15px;">By completing this application you agree to the following:</p>
+                        <p style="color: #fff; border-bottom: 1px solid rgba(255, 215, 0, 1); padding-bottom: 4px; width: fit-content; padding-inline: 5px;">By completing this application you agree to the following</p>
                         <ul>
                             <li>You agree to complete at least 1 flight per month</li>
                             <li>You own a legal copy of MS Flight Simulator, Prepar3D, or X-Plane</li>
@@ -616,7 +634,7 @@ $MetaPageKeywords = "virtual airline, pilot application, join, aviation, flight 
                             <li>You must comply with all VATSIM/IVAO/PilotEdge Regulations</li>
                         </ul>
                         <p>It may take up to 24 hours for your application to be approved if you are successful.</p>
-                        <h4 style="color: #fff; border-bottom: 1px solid rgba(255, 215, 0, 1); padding-bottom: 4px; width: fit-content; padding-inline: 15px;">Password Requirements</h4>
+                        <h4 style="color: #fff; border-bottom: 1px solid rgba(255, 215, 0, 1); padding-bottom: 4px; width: fit-content; padding-inline: 5px; margin-top: 10px">Password Requirements</h4>
                         <p>Your password must contain at least:</p>
                         <ul>
                             <li>1 upper case letter</li>
