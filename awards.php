@@ -755,6 +755,25 @@ $MetaPageKeywords = "";
         display: none;
     }
 }
+/* Global Heading */
+.global-heading {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.global-heading .global-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 0 !important;
+    text-transform: lowercase;
+    width: fit-content;
+}
+.global-heading i{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
 </style>
 
 <?php include 'includes/header.php';?>
@@ -762,8 +781,10 @@ $MetaPageKeywords = "";
 <section id="content" class="section awards-section offset-header">
     <div class="container">
         <!-- Awards Description Glass Card -->
+         <div class="global-heading">
+                    <h3 class="global-title">Our Awards</h3>
+                </div>
         <div class="awards-description-card">
-            <h1 class="awards-main-title mt-0">Our Awards</h1>
             <p class="awards-description">
                 Ut dignissim condimentum erat sit amet pellentesque. Aenean lacus mi, lobortis et sem
                 interdum, ultrices tincidunt felis. Praesent lacinia cursus arcu, id ultricies leo viverra
@@ -778,10 +799,11 @@ $MetaPageKeywords = "";
         </div>
 
         <!-- Awards Title - Outside Card -->
-        <div class="awards-title-wrapper">
-            <h3 class="awards-title">Awards Collection</h3>
-            <i class="fa fa-trophy awards-icon" aria-hidden="true"></i>
-        </div>
+         <div class="global-heading" style="display: flex; align-items: center; justify-content: start; gap: 10px">
+                    <h3 class="global-title">Awards Collection</h3>
+            <i class="fa fa-trophy awards-icon" aria-hidden="true"></i></h3>
+                </div>
+      
         
         <!-- Glassmorphism Card -->
         <div class="row">
