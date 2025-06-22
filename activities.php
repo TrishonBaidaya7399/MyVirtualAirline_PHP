@@ -412,7 +412,7 @@ if ($res->getStatusCode() == 200) {
     
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .activity-section {
-            background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=4148&q=80');
+            background-image: url('./assets/images/backgrounds/tour_events_bg.jpg');
         }
     }
 

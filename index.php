@@ -224,7 +224,7 @@ session_start();
 
 .zoom-img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -497,7 +497,6 @@ margin-bottom: 20px;
 <section id="features" class="features section">
   <div class="container-fluid" style="max-width: 98%; margin: 0 auto;">
     <h3 class="title text-left mb-4">features</h3>
-
     <div class="row">
      <div class="col-md-4 col-sm-12 card-img">
        <div class="zoom-wrapper position-relative">
