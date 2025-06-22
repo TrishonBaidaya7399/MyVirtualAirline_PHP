@@ -27,7 +27,7 @@ $MetaPageKeywords = "";
     position: relative;
     padding: 80px 0;
     min-height: calc(100vh - 128px);
-    background-image: url('./assets/images/backgrounds/leaderboard_sky_bg.jpg');
+    background-image: url('./assets/images/backgrounds/flight_search_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ $MetaPageKeywords = "";
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: rgba(0,0,0, 0.9);
+    color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,7 +180,7 @@ $MetaPageKeywords = "";
 
 .flights-table-header {
     background: rgba(255, 255, 255, 0.9);
-color: rgba(0,0,0,0.9);
+    color: white;
     padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -189,7 +189,7 @@ color: rgba(0,0,0,0.9);
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
-  color: rgba(0,0,0,0.9);
+  color: white;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -231,12 +231,12 @@ color: rgba(0,0,0,0.9);
 .flights-table {
     margin: 0;
     background: transparent;
-   color: rgba(0,0,0,0.9);
+   color: white;
     width: 100%;
 }
 
 .flights-table thead th {
- color: rgba(0,0,0,1);
+ color: white;
     font-weight: 600;
     border: none !important;
     padding: 15px 12px;
@@ -265,7 +265,7 @@ color: rgba(0,0,0,0.9);
     border: none !important;
     vertical-align: middle;
     font-size: 14px;
-color: rgba(0,0,0,0.9);
+color: white;
 }
 
 .flights-table tbody tr:last-child {
@@ -277,7 +277,7 @@ color: rgba(0,0,0,0.9);
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
-color: rgba(0,0,0,0.9);
+color: white;
     padding: 10px;
     margin: 0;
 }
@@ -303,7 +303,7 @@ color: rgba(0,0,0,0.9);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 6px;
     padding: 6px 10px;
-  color: rgba(0,0,0,0.9);
+  color: black;
 }
 
 .paginate_button {
@@ -326,7 +326,7 @@ color: rgba(0,0,0,0.9);
 .no-data-message {
     text-align: center;
     padding: 60px 20px;
-  color: rgba(0,0,0,0.9);
+  color: white;
     font-style: italic;
     background: rgba(255, 255, 255, 0.8);
     font-size: 1.2rem;
@@ -342,7 +342,7 @@ color: rgba(0,0,0,0.9);
     padding-left: 0 !important;
     padding-right: 0 !important;
     background: transparent !important;
-color: rgba(0,0,0,0.9);
+color: white;
 }
 
 #flights_wrapper .row .col-sm-7 {
@@ -530,7 +530,7 @@ color: rgba(0,0,0,0.9);
     
     .schedule-header h1,
     .schedule-header p {
-        color: black;
+        color: white;
         text-shadow: none;
     }
     
@@ -543,20 +543,50 @@ color: rgba(0,0,0,0.9);
     
     .flights-table thead th,
     .flights-table tbody td {
-        color: black;
+        color: white;
     }
 }
+/* -------------------------------- Global title ------------------------------------ */
+.global-heading{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.global-heading .global-title{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 0px !important;
+    text-transform: lowercase;
+}
+.global-heading i{
+    font-size: 30px;
+    color: rgba(255, 215, 0, 1);
+    rotate: -20deg;
+    margin-bottom: 4px;
+}
+@media (max-width: 612px){
+    .global-heading .global-title{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+/* -------------------------------- X ------------------------------------ */
 </style>
 <section id="content" class="section schedule-section offset-header">
     <div class="container">
         <!-- Header Glassmorphism Card -->
         <div class="row">
             <div class="col-12">
+                 <div class="global-heading">
+                    <h3 class="global-title">Advanced Schedule</h3>
+                </div>
                 <div class="schedule-glass-card">
                     <div class="schedule-header">
-                        <h1>Advanced Schedule</h1>
-                        <hr />
-                        <p><i class="fa fa-search" aria-hidden="true"></i> Use the filters below to search all
+                        <p style='color: #fff'><i class="fa fa-search" aria-hidden="true"></i> Use the filters below to search all
                             flight schedules.<br />Alternatively, you can search for flights on the <a href="route_map.php">route
                                 map</a>.
                         </p>
@@ -611,10 +641,11 @@ color: rgba(0,0,0,0.9);
         <!-- Flights Table Glassmorphism Card -->
         <div class="row">
             <div class="col-12">
+                 <div class="global-heading">
+                    <h3 class="global-title">Flight Schedule</h3>
+                    <i class="fa fa-plane"></i>
+                </div>
                 <div class="flights-table-glass-card">
-                    <div class="flights-table-header">
-                        <h3><i class="fa fa-plane"></i> Flight Schedule</h3>
-                    </div>
                     <div class="flights-table-wrapper">
                         <table class="table table-striped flights-table" id="flights" width="100%">
                             <thead>
