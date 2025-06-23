@@ -79,6 +79,7 @@ if (isset($_SESSION['pilotid'])) {
 .navbar-custom {
   background: transparent;
   border: none;
+  width: 100%;
   /* padding: 15px 0; */
 }
 
@@ -137,6 +138,7 @@ if (isset($_SESSION['pilotid'])) {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 30px;
   }
   
   .mobile-navbar .logo {
@@ -272,6 +274,8 @@ if (isset($_SESSION['pilotid'])) {
   .mobile-drawer,
   .mobile-drawer-overlay {
     display: none !important;
+    width: 100%;
+    gap: 30px;
   }
 }
 </style>

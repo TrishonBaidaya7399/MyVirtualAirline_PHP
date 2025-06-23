@@ -268,7 +268,7 @@ $MetaPageKeywords = "";
 
 .flights-table-header {
     background: rgba(255, 255, 255, 0.9);
-    color: rgba(0,0,0,1);
+    color: rgba(255, 255, 255, 1);
     padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -277,7 +277,7 @@ $MetaPageKeywords = "";
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
-  color: rgba(0,0,0,0.9);
+  color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -320,12 +320,12 @@ $MetaPageKeywords = "";
 .flights-table {
     margin: 0;
     background: transparent;
-   color: rgba(0,0,0,0.9);
+   color: rgba(255, 255, 255, 0.9);
     width: 100%;
 }
 
 .flights-table thead th {
-color: rgba(0,0,0,1);
+color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     border: none !important;
     padding: 15px 12px;
@@ -354,7 +354,7 @@ color: rgba(0,0,0,1);
     border: none !important;
     vertical-align: middle;
     font-size: 14px;
-   color: rgba(0,0,0,0.9);
+   color: rgba(255, 255, 255, 0.9);
 }
 
 .flights-table tbody tr:last-child {
@@ -366,7 +366,7 @@ color: rgba(0,0,0,1);
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
-    color: rgba(0,0,0,0.9);
+    color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     margin: 0;
 }
@@ -704,6 +704,28 @@ color: rgba(0,0,0,0.9);
         color: white;
     }
 }
+/* Global Heading */
+.global-heading {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.global-heading .global-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 0 !important;
+    text-transform: lowercase;
+    width: fit-content;
+}
+
+@media (max-width: 612px) {
+    .global-heading .global-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
 </style>
 <?php include 'includes/header.php';?>
 <section id="content" class="section route-map-section offset-header">
@@ -747,10 +769,10 @@ color: rgba(0,0,0,0.9);
         <!-- Flights Table Glassmorphism Card -->
         <div class="row">
             <div class="col-12">
+                <div class="global-heading">
+                    <h3 class="global-title"><i class="fa fa-plane"></i> Available Flights</h3>
+                </div>
                 <div class="flights-table-glass-card">
-                    <div class="flights-table-header">
-                        <h3><i class="fa fa-plane"></i> Available Flights</h3>
-                    </div>
                     <div class="flights-table-wrapper">
                         <table class="table table-striped flights-table" id="flights" width="100%">
                             <thead>
