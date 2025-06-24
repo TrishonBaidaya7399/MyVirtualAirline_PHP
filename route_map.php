@@ -42,7 +42,7 @@ $MetaPageKeywords = "";
     padding: 60px 0;
     min-height: calc(100vh - 128px);
     
-       background-image: url('./assets/images/backgrounds/world_map2.jpg');
+       background-image: url('./assets/images/backgrounds/route_map.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
