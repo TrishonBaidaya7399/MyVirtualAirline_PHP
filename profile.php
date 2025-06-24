@@ -274,13 +274,13 @@ body {
 }
 
 .flights-table tbody tr {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
     transition: all 0.3s ease;
 }
 
 .flights-table tbody tr:hover {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
     transform: scale(1.01);
 }
 
@@ -670,17 +670,19 @@ body {
                     <div class="global-heading">
                         <h3 class="global-title"><i class="fa fa-trophy"></i> Awards <i class="fa fa-angle-double-right"
                                 aria-hidden="true"></i> <a
-                                href="<?php echo website_base_url; ?>pilot_awards.php?id=<?php echo $pilot->id; ?>">view
+                                href="<?php echo website_base_url; ?>pilot_awards.php?id=<?php echo $pilot->id; ?>" style="font-size: 24px; color: rgba(255, 255, 255, 0.8)">view
                                 more</a></h3>
                     </div>
                     <div class="route-map-glass-card">
                         <div class="row" style="width: 100%">
                             <div class="col-md-12">
-                                <?php foreach ($awards as $key => $award) { ?>
-                                    <img src="<?php echo website_base_url; ?>uploads/awards/<?php echo $award->imageUrl; ?>"
-                                        style="margin-right:5px;" width="60"
-                                        title="<?php echo $award->awardName; ?> awarded on <?php echo (new DateTime($award->dateAwarded))->format('d M Y'); ?>" />
-                                <?php }; ?>
+                               <?php foreach ($awards as $key => $award) { ?>
+    <img src="<?php echo website_base_url; ?>uploads/awards/<?php echo $award->imageUrl ?: 'default-image.jpg'; ?>" 
+         onError="this.src='<?php echo website_base_url; ?>assets/images/backgrounds/admin_cloud_bg.jpg';" 
+         style="margin-right: 5px; max-width: 60px; max-height: 60px;" 
+         width="60" 
+         title="<?php echo htmlspecialchars($award->awardName); ?> awarded on <?php echo (new DateTime($award->dateAwarded))->format('d M Y'); ?>" />
+<?php } ?>
                             </div>
                         </div>
                     </div>
