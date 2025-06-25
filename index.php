@@ -10,10 +10,8 @@ session_start();
 ?>
 <?php include 'includes/header.php'; ?>
 <style>
-
 .hero-section {
     position: relative;
-    min-height: 90vh;
     overflow: hidden;
 }
 
@@ -47,7 +45,6 @@ session_start();
     z-index: 2;
 }
 
-
 .glass-card {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -63,7 +60,6 @@ session_start();
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
-
 
 .card-content {
     color: #333;
@@ -81,7 +77,6 @@ session_start();
 .flight-booking-section,
 .charter-section {
     padding: 15px 30px;
-
 }
 
 .booking-text,
@@ -91,7 +86,6 @@ session_start();
     margin-bottom: 10px;
     font-weight: 400;
 }
-
 
 .find-flights-btn {
     background: #007bff;
@@ -128,7 +122,6 @@ session_start();
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
 }
-
 
 .divider {
     position: relative;
@@ -257,21 +250,16 @@ session_start();
 }
 
 @media (max-width: 768px) {
-    .hero-section{
-        min-height: 70vh;
-    }
-    .hero-banner{
+    .hero-banner {
         min-height: 70vh;
     }
     .features.section {
         background-attachment: scroll;
         padding: 40px 0;
     }
-    
     .zoom-img {
         height: 200px;
     }
-    
     .overlay-title {
         font-size: 16px;
         padding: 15px 10px 12px;
@@ -282,16 +270,15 @@ session_start();
     .features.section {
         padding: 30px 0;
     }
-    
     .zoom-img {
         height: 180px;
     }
-    
     .overlay-title {
         font-size: 14px;
         padding: 12px 8px 10px;
     }
 }
+
 @media (max-width: 768px) {
     .stats-parallax-section {
         background-attachment: scroll;
@@ -306,47 +293,44 @@ session_start();
 }
 
 @media (max-width: 768px) {
-   .flight-booking-section,
-.charter-section {
-    padding: 10px 20px;
-
-}
-    
+    .flight-booking-section,
+    .charter-section {
+        padding: 10px 20px;
+    }
     .dispatch-title {
         font-size: 2.5rem;
     }
-    
     .find-flights-btn,
     .charter-btn {
         width: 100%;
         margin: 15px 0;
     }
-    
     .hero-banner {
-        background-attachment: scroll; 
+        background-attachment: scroll;
         padding: 60px 0;
     }
 }
 
-.card-img{
-margin-bottom: 20px;
+.card-img {
+    margin-bottom: 20px;
 }
+
 @media (min-width: 992px) {
-    .card-img{
-    margin-bottom: 0px;
+    .card-img {
+        margin-bottom: 0px;
     }
 }
+
 @media (max-width: 480px) {
     .dispatch-title {
         font-size: 2rem;
     }
-    
-   .flight-booking-section,
-.charter-section {
-    padding: 5px 10px;
+    .flight-booking-section,
+    .charter-section {
+        padding: 5px 10px;
+    }
+}
 
-}
-}
 .join.section {
     padding: 60px 0;
     background: #f8f9fa;
@@ -382,7 +366,18 @@ margin-bottom: 20px;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
-
+.carousel-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_nav_btn{
+    padding: 6px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: rgba(255,255, 255, 0.3);
+}
 @media (min-width: 768px) {
     .join-content {
         display: flex;
@@ -390,12 +385,10 @@ margin-bottom: 20px;
         justify-content: space-between;
         gap: 30px;
     }
-    
     .join-text {
         flex: 1;
         text-align: right;
     }
-    
     .join-button {
         flex-shrink: 0;
     }
@@ -405,21 +398,17 @@ margin-bottom: 20px;
     .join.section {
         padding: 40px 0;
     }
-    
     .join.section .title {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 25px;
     }
-    
     .join-content {
         text-align: center;
     }
-    
     .join-button {
         margin-top: 20px;
     }
-    
     .btn-cta-primary {
         width: 100%;
         max-width: 250px;
@@ -432,13 +421,11 @@ margin-bottom: 20px;
     .join.section {
         padding: 30px 0;
     }
-    
     .join.section .title {
         font-size: 1.8rem;
         margin-bottom: 20px;
         line-height: 1.3;
     }
-    
     .btn-cta-primary {
         padding: 12px 25px;
         font-size: 16px;
@@ -450,42 +437,58 @@ margin-bottom: 20px;
         font-size: 1.6rem;
         padding: 0 15px;
     }
-    
     .join.section .container {
         padding: 0 15px;
     }
 }
 </style>
 <section class="hero-section">
-    <div class="hero-banner">
-        <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="" style="width: fit-content; margin-inline: auto">
-                            <h2 class="dispatch-title">dispatch</h2>
-                    <div class="glass-card">
-                        <div class="card-content">
-                            
-                            <div class="flight-booking-section">
-                                <p class="booking-text">You don't have any active flight bookings.</p>
-                                <button class="btn btn-outline-light btn-lg charter-btn">
-                                    <i class="fa fa-search"></i> Find Flights
-                                </button>
-                            </div>
-                            
-                            <div class="divider">
-                            </div>
-                            
-                            <div class="charter-section">
-                                <p class="charter-text">Or, you can dispatch a charter flight with SimBrief.</p>
-                                <button class="btn btn-outline-light btn-lg charter-btn">
-                                    <i class="fa fa-plane"></i> Dispatch Charter Flight
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./assets/images/slides/slider1.jpeg">
+                <div class="carousel-caption">
+                    <h3>Welcome to MyAirline</h3>
+                    <p><a href="#features" class="scrollto">Begin your decent into a new virtual career <i
+                                class="fa fa-arrow-down bounce" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/images/slides/slider2.jpeg">
+                <div class="carousel-caption">
+                    <h3>A Modern Fleet</h3>
+                    <p>With state of the art customizable flight tracking app
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/images/slides/slider3.jpeg">
+                <div class="carousel-caption">
+                    <h3>Over 300 Destinations Worldwide</h3>
+                    <p>A modern dispatch system including SimBrief integration
+                    </p>
                 </div>
             </div>
         </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <div class="slider_nav_btn">
+
+            <span class="fa-solid fa-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </div>    
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <div class="slider_nav_btn">
+
+            <span class="fa-solid fa-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </div>    
+        </a>
     </div>
 </section>
 <section id="about" class="about section">
