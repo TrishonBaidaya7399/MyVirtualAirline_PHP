@@ -248,13 +248,13 @@ session_start();
     position: relative;
     z-index: 2;
 }
-
 @media (max-width: 768px) {
     .hero-section {
         min-height: 50vh;
     }
     #myCarousel, .carousel-inner, .carousel-inner .item img{
         min-height: 50vh;
+        object-fit: cover;
     }
     .features.section {
         background-attachment: scroll;
