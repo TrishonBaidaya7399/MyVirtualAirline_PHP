@@ -130,7 +130,7 @@ body {
     position: relative;
     z-index: 3;
     padding: 20px;
-    width: 600px;
+    width: 400px;
 }
 
 .glass-card {

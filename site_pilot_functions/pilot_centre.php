@@ -85,66 +85,59 @@ $MetaPageKeywords = "";
 ?>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.pilot_dashboard_section {
-    position: relative;
-    padding: 80px 0;
-    padding-bottom: 20px !important;
-    min-height: calc(100vh - 128px);
-    background-image: url('../assets/images/backgrounds/dashboard_pilot_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-y: auto;
-}
-
-.pilot_dashboard_section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-
-.pilot_dashboard_section .container {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Global Heading */
-.global-heading {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.global-heading .global-title {
-    font-size: 40px;
-    font-weight: 800;
-    color: #fff;
-    margin-top: 0 !important;
-    text-transform: lowercase;
-    width: fit-content;
-}
-
-@media (max-width: 612px) {
-    .global-heading .global-title {
-        font-size: 30px;
-        font-weight: 700;
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
     }
-}
+
+    .pilot_dashboard_section {
+        position: relative;
+        padding: 80px 0;
+        padding-bottom: 20px !important;
+        min-height: calc(100vh - 128px);
+        background-image: url('../assets/images/backgrounds/dashboard_pilot_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-y: auto;
+    }
+
+    .pilot_dashboard_section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .pilot_dashboard_section .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Global Heading */
+    .global-heading {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .global-heading .global-title {
+        font-size: 40px;
+        font-weight: 800;
+        color: #fff;
+        margin-top: 0 !important;
+        text-transform: lowercase;
+        width: fit-content;
+    }
 
 /* Glassmorphism Card */
 .glass-card {
@@ -337,84 +330,328 @@ i.profile-img{
     }
 }
 
+    @media (max-width: 612px) {
+        .global-heading .global-title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
 @media (max-width: 768px) {
     .pilot_dashboard_section {
         padding: 80px 0;
     }
         i.profile-img{
             font-size: 130px;
-        }
-    .glass-card{
-padding: 24px;
+
+    /* Glassmorphism Card */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        color: #fff;
+        padding: 40px;
     }
 
-    .jumbotron {
+    .glass-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Panel Heading */
+    .panel-heading {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         padding: 15px;
+        border-bottom: 1px solid rgba(255, 215, 0, 1);
     }
-    .jumbotron h1 {
-        font-size: 1.8rem;
-    }
+
     .panel-title {
-        font-size: 1.3rem;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
-    .activity-card-container {
-        height: 120px;
-    }
-    .table thead th, .table tbody td {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-}
 
 @media (max-width: 576px) {
     .pilot_dashboard_section {
         padding: 80px 0;
+    /* Panel Body */
+    .panel-body {
+        padding: 20px;
+        color: #fff;
     }
-    .glass-card{
-padding: 18px;
+
+    /* Jumbotron Styles */
+    .jumbotron {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 0;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     .jumbotron h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        margin-top: 0;
     }
-    .panel-title {
+
+    .jumbotron p {
+        font-size: 1.1rem;
+    }
+
+    .pilot-profile-image,
+    .profile {
+        margin-left: 15px;
+    }
+
+    .help-block {
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    /* Table Styles */
+    .table {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .table thead th {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: #fff;
+        font-weight: 600;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .table tbody td {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        vertical-align: middle;
+        color: #fff;
+    }
+
+    .table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    /* Activity Card Styles */
+    .activity-card-container {
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .activity-card-hidden {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .activity-card-hidden a {
+        color: #fff;
+        text-decoration: none;
         font-size: 1.2rem;
     }
-    .activity-card-container {
-        height: 100px;
-    }
-    .table {
-        font-size: 0.8rem;
-    }
-    .table thead th, .table tbody td {
-        padding: 6px;
-    }
-}
 
-/* Print Styles */
-@media print {
-    .pilot_dashboard_section {
-        background: white;
-        padding: 20px 0;
+    .col-md-12 {
+        padding: 0 !important;
     }
-    .pilot_dashboard_section::before {
-        display: none;
+
+    /* Map Styles */
+    #map {
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
     }
-    .glass-card, .jumbotron, .panel-heading {
-        background: white;
-        border: 1px solid #ccc;
-        box-shadow: none;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
+
+    i.profile {
+        font-size: 150px;
     }
-    .panel-title, .panel-body, .jumbotron, .table thead th, .table tbody td {
-        color: black;
-        text-shadow: none;
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+        .pilot_dashboard_section {
+            padding: 80px 0;
+        }
+
+        .jumbotron,
+        .panel-body {
+            padding: 20px;
+        }
+
+        .table thead th,
+        .table tbody td {
+            padding: 10px;
+        }
+
+        .activity-card-container {
+            height: 180px;
+        }
     }
-    .table thead th, .table tbody td {
-        border: 1px solid #ccc;
+
+    @media (max-width: 992px) {
+        .pilot_dashboard_section {
+            padding: 80px 0;
+            background-attachment: scroll;
+        }
+
+        .jumbotron h1 {
+            font-size: 2rem;
+        }
+
+        .jumbotron p {
+            font-size: 1rem;
+        }
+
+        .panel-title {
+            font-size: 1.5rem;
+        }
+
+        .activity-card-container {
+            height: 150px;
+        }
+
+        .table {
+            font-size: 0.95rem;
+        }
     }
-}
+
+    @media (max-width: 768px) {
+        .pilot_dashboard_section {
+            padding: 80px 0;
+        }
+
+        i.profile {
+            font-size: 100px;
+        }
+
+        .glass-card {
+            padding: 24px;
+        }
+
+        .jumbotron {
+            padding: 15px;
+        }
+
+        .jumbotron h1 {
+            font-size: 1.8rem;
+        }
+
+        .panel-title {
+            font-size: 1.3rem;
+        }
+
+        .activity-card-container {
+            height: 120px;
+        }
+
+        .table thead th,
+        .table tbody td {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .pilot_dashboard_section {
+            padding: 8px 0;
+        }
+
+        .glass-card {
+            padding: 18px;
+        }
+
+        .jumbotron h1 {
+            font-size: 1.5rem;
+        }
+
+        .panel-title {
+            font-size: 1.2rem;
+        }
+
+        .activity-card-container {
+            height: 100px;
+        }
+
+        .table {
+            font-size: 0.8rem;
+        }
+
+        .table thead th,
+        .table tbody td {
+            padding: 6px;
+        }
+    }
+
+    /* Print Styles */
+    @media print {
+        .pilot_dashboard_section {
+            background: white;
+            padding: 20px 0;
+        }
+
+        .pilot_dashboard_section::before {
+            display: none;
+        }
+
+        .glass-card,
+        .jumbotron,
+        .panel-heading {
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        .panel-title,
+        .panel-body,
+        .jumbotron,
+        .table thead th,
+        .table tbody td {
+            color: black;
+            text-shadow: none;
+        }
+
+        .table thead th,
+        .table tbody td {
+            border: 1px solid #ccc;
+        }
+    }
 </style>
 
 <?php include '../includes/header.php'; ?>
@@ -458,9 +695,9 @@ padding: 18px;
                             </h1>
                             <p>Your Pilot ID: <strong><?php echo $_SESSION['callsign']; ?></strong>
                                 | <?php if (!empty($pilot->rank->imageUrl)) { ?><img
-                                    src="<?php echo website_base_url; ?>uploads/ranks/<?php echo $pilot->rank->imageUrl; ?>"
-                                    width="80" /> <strong><?php echo $pilot->rank->name; ?></strong><?php } else { ?>No
-                                Rank<?php } ?>
+                                        src="<?php echo website_base_url; ?>uploads/ranks/<?php echo $pilot->rank->imageUrl; ?>"
+                                        width="80" /> <strong><?php echo $pilot->rank->name; ?></strong><?php } else { ?>No
+                                    Rank<?php } ?>
                             </p>
                             <p>
                                 Base: <strong><?php echo $pilot->hub; ?></strong>
@@ -493,9 +730,9 @@ padding: 18px;
         <?php if ($suggestedFlights != null) { ?>
             <div class="row" style="width: 100%">
                 <div class="col-12">
-                     <div class="global-heading w-full">
-                    <h3 class="global-title w-full">Suggested Flights</h3>
-                </div>
+                    <div class="global-heading w-full">
+                        <h3 class="global-title w-full">Suggested Flights</h3>
+                    </div>
                     <div class="glass-card">
                         <div class="">
                             <table class="table table-striped">
@@ -540,13 +777,13 @@ padding: 18px;
         <?php } ?>
         <div class="row" style="width: 100%">
             <div class="col-12">
-                 <div class="global-heading">
-                     <?php if (!empty($latestFlight)) { ?>
-                            <span class="text-right" style="clear:left;float:right;"><a
-                                    href="<?php echo website_base_url; ?>pirep_info.php?id=<?php echo $latestFlight->id; ?>">View
-                                    Flight Report <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                            </span>
-                        <?php } ?>
+                <div class="global-heading">
+                    <?php if (!empty($latestFlight)) { ?>
+                        <span class="text-right" style="clear:left;float:right;"><a
+                                href="<?php echo website_base_url; ?>pirep_info.php?id=<?php echo $latestFlight->id; ?>">View
+                                Flight Report <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </span>
+                    <?php } ?>
                     <h3 class="global-title w-full">Previous Flight</h3>
                 </div>
                 <div class="glass-card">
