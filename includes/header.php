@@ -38,9 +38,9 @@ if (isset($_SESSION['pilotid'])) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo website_base_url; ?>assets/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo website_base_url; ?>assets/plugins/font-awesome/css/font-awesome.min.css">
         <link id="stylesheet" rel="stylesheet" href="<?php echo website_base_url; ?>assets/css/styles.css">
@@ -59,13 +59,16 @@ if (isset($_SESSION['pilotid'])) {
   width: auto;
 }
 .nav-item a{
-  font-weight: 800;
-  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
 }
 
 @media (max-width: 500px) {
   #logo-image {
     max-height: 24px;
+    width: 100%;
   }
 }
 
@@ -224,11 +227,13 @@ if (isset($_SESSION['pilotid'])) {
   padding: 15px 20px;
   color: #fff;
   text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
 }
 
 .mobile-drawer-menu .nav-item > a:hover {
   background: #f8f9fa;
+  color: black;
 }
 
 .mobile-drawer-submenu {
@@ -248,7 +253,9 @@ if (isset($_SESSION['pilotid'])) {
 .mobile-drawer-submenu .nav-item > a {
   padding: 12px 40px;
   font-size: 14px;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: normal;
+  color: black;
 }
 
 .mobile-submenu-toggle {

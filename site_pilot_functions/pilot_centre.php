@@ -294,8 +294,8 @@ body {
     border-radius: 15px;
     overflow: hidden;
 }
-i.profile{
-    font-size: 150px;
+i.profile-img{
+    font-size: 200px ;
 }
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -341,8 +341,8 @@ i.profile{
     .pilot_dashboard_section {
         padding: 80px 0;
     }
-        i.profile{
-            font-size: 100px;
+        i.profile-img{
+            font-size: 130px;
         }
     .glass-card{
 padding: 24px;
@@ -368,7 +368,7 @@ padding: 24px;
 
 @media (max-width: 576px) {
     .pilot_dashboard_section {
-        padding: 8px 0;
+        padding: 80px 0;
     }
     .glass-card{
 padding: 18px;
@@ -445,16 +445,16 @@ padding: 18px;
                         </div>
                     </div>
                 <?php } ?>
-                <div class="glass-card">
-                    <div class="">
+                <div class="">
+                    <div style="color: #fff; margin-bottom: 30px">
                         <div class="">
                             <?php if ($pilot->profileImage != "") { ?>
                                 <img src="<?php echo website_base_url; ?>uploads/profiles/<?php echo $pilot->profileImage ?>"
                                     width="200" style="float:right;" class="img-circle pilot-profile-image" />
                             <?php } else { ?>
-                                <i class="fa fa-user-circle profile" aria-hidden="true" style="float:right;"></i>
+                                <i class="fa fa-user-circle profile-img" aria-hidden="true" style="float:right;"></i>
                             <?php } ?>
-                            <h1>Hello, <?php echo explode(" ", $_SESSION['name'])[0]; ?>.
+                            <h1 style="text-transform: lowercase">Hello, <?php echo explode(" ", $_SESSION['name'])[0]; ?>.
                             </h1>
                             <p>Your Pilot ID: <strong><?php echo $_SESSION['callsign']; ?></strong>
                                 | <?php if (!empty($pilot->rank->imageUrl)) { ?><img
